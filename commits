@@ -17,3 +17,10 @@ WHERE
 -- 3. Escribe una consulta que extraiga todas las columnas de los datos de los modelos de aviones disponibles (aircraft_data). Puede que os aparezca en alguna actualización como "aircrafts_data", revisad las tablas y elegid la que corresponda.
 SELECT * FROM 
     aircrafts_data;
+-- 4. Con el resultado anterior visualizado previamente, escribe una consulta que extraiga los identificadores de vuelo que han volado con un Boeing 737. (Código Modelo Avión = 733)
+SELECT 
+    flight_id
+FROM 
+    flights
+WHERE 
+    aircraft_code = '733';
